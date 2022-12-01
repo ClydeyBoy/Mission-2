@@ -1,0 +1,128 @@
+[
+    {
+        "query": "The insurance section wasnt clear",
+        "prediction": {
+            "topIntent": "Problems",
+            "intents": {
+                "Problems": {
+                    "score": 0.95885396
+                },
+                "None": {
+                    "score": 0.019029511
+                },
+                "Good Feedback": {
+                    "score": 0.0178255
+                }
+            },
+            "entities": {
+                "Subject": [
+                    "insurance"
+                ],
+                "$instance": {
+                    "Subject": [
+                        {
+                            "type": "Subject",
+                            "text": "insurance",
+                            "startIndex": 4,
+                            "length": 9,
+                            "score": 0.8774125,
+                            "modelTypeId": 1,
+                            "modelType": "Entity Extractor",
+                            "recognitionSources": [
+                                "model"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "sentiment": {
+                "label": "negative",
+                "score": 0.017659664
+            }
+        }
+    },
+    {
+        "query": "Using the online auctions was very clear and a breeze to use!",
+        "prediction": {
+            "topIntent": "Good Feedback",
+            "intents": {
+                "Good Feedback": {
+                    "score": 0.8961225
+                },
+                "Problems": {
+                    "score": 0.291346
+                },
+                "None": {
+                    "score": 0.0041002985
+                }
+            },
+            "entities": {
+                "Subject": [
+                    "online auctions"
+                ],
+                "$instance": {
+                    "Subject": [
+                        {
+                            "type": "Subject",
+                            "text": "online auctions",
+                            "startIndex": 10,
+                            "length": 15,
+                            "score": 0.96707743,
+                            "modelTypeId": 1,
+                            "modelType": "Entity Extractor",
+                            "recognitionSources": [
+                                "model"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "sentiment": {
+                "label": "positive",
+                "score": 0.92419493
+            }
+        }
+    },
+    {
+        "query": "I had difficulty buying a car online",
+        "prediction": {
+            "topIntent": "Problems",
+            "intents": {
+                "Problems": {
+                    "score": 0.9461726
+                },
+                "Good Feedback": {
+                    "score": 0.046263523
+                },
+                "None": {
+                    "score": 0.009455321
+                }
+            },
+            "entities": {
+                "Subject": [
+                    "car"
+                ],
+                "$instance": {
+                    "Subject": [
+                        {
+                            "type": "Subject",
+                            "text": "car",
+                            "startIndex": 26,
+                            "length": 3,
+                            "score": 0.80767745,
+                            "modelTypeId": 1,
+                            "modelType": "Entity Extractor",
+                            "recognitionSources": [
+                                "model"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "sentiment": {
+                "label": "negative",
+                "score": 0.05649051
+            }
+        }
+    }
+]

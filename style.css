@@ -1,0 +1,165 @@
+.contact {
+    margin: auto;
+    text-align: center;
+}
+
+.backgroundimage {
+    min-height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(00, 00, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/backgroundimage.jpg);
+    position: relative;
+}
+
+/* centres the heading in the x direction and provides a 10% offset vertically - this is relative to the backgroundimage class */
+.contact h1 { 
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    
+}
+
+/* centres the form - this is relative to the backgroundimage class */
+.form {
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+/* provides formatting to all items that have input of text */
+input[type='text'] {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* provides formatting to all textbox */
+#comments {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: tahoma;
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* submit button formatting */
+
+#submit-btn{
+
+    display: inline-block;
+    border: 2px white outset;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    margin: 25px;
+    padding: 10px 25px;
+    font-size: 17px;
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+#submit-btn:hover {
+    transition: 1s;
+    background: red;
+    border: none;
+}
+
+.popUpBox {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    background-color: white;
+    border-radius: 5%;
+    opacity: 0;
+   
+    
+
+}
+
+#img-check {
+    width: 20%;
+     /* outline: red 2px outset; */
+
+}
+
+#ty-text {
+    font-size: 35px;
+    font-family: 'Tahoma';
+    /* outline: red 2px outset; */
+   
+}
+
+#submit-text {
+    font-size: 18px;
+    font-family: 'Tahoma';
+}
+
+#popup-okay-btn {
+    display: inline-block;
+    border: 2px black outset;
+    text-decoration: none;
+    margin: 25px;
+    padding: 10px 25px;
+    font-size: 17px;
+    background-color: transparent;
+    z-index: 1;
+    
+    
+    
+}
+
+#popup-okay-btn:hover {
+    background-color: red;
+    border: red;
+    transition: 0.75s;
+    color: white;
+    
+
+}
+
+.popUpBox-contents {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.active {
+    opacity: 1;
+    z-index: 1;
+    transition: 0.75s;
+}
+
+.oneCircle {
+    width: 40px;
+    height: 40px;
+    color: #FDF7C0;
+    border-color: #43C0F6;
+    border: 3px;
+    border-radius: 3rem;
+}
